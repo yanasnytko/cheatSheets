@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/styleCSS.css">
+  <title>CSS Cheat Sheet</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./html_cheatsheet.html" title="Aller à la Cheet Sheet de HTML" class="-html -hover">
+        Cheat Sheet de HTML
+      </a>
+      <a href="./css_cheatsheet.html" title="Aller à la Cheet Sheet de CSS" class="-css -here -hover">
+        Cheat Sheet de CSS
+      </a>
+      <a href="./js_cheatsheet.html" title="Aller à la Cheet Sheet de JS" class="-js -hover">
+        Cheat Sheet de JavaScript
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="-title">
+      Cheat Sheet de CSS
+    </h1>
+    <!-- 1 -->
+    <div class="o-cheat">
+      <h2 class="-title">
+        CSS (Cascading Style Sheets)
+      </h2>
+      <pre>
+<span class="-tag">.main-title</span> {
+  <span class="-property">font-size:</span> white;
+}     </pre>
+      <p class="m-cheat__explication">
+        Les feuilles de style en cascade permettent la mise en forme de la squelette HTML. <br>
+        Le sélecteur&nbsp;: le nom de la balise, de classe ou d'ID auquel on veut attribuer un style. (.main-title) <br>
+        La propriété&nbsp;: va permettre la mise en page du contenu. (font-size) <br>
+        La valeur&nbsp;: la valeur que l'on souhaite apporter à la propriété. (white)
+      </p>
+    </div>
+    <!-- 2 -->
+    <div class="o-cheat">
+      <h2 class="-title">
+        Interne
+      </h2>
+      <pre class="-code">&lt;head&gt;
+  <style type="text/css">
+    h1{
+      color: red;
+    }
+  </style>
+&lt;/head&gt;</pre>
+
+      <p class="m-cheat__explication">
+        L'avantage c'est que l'on peut appliquer une règle sur tous les mêmes éléments du document. <br>
+        L'inconvénient c'est que ça ne s'applique qu'au document et non pas au site entier. Il faudra donc modifier le
+        CSS de chaque page en cas de changement.
+      </p>
+    </div>
+    <!-- 3 -->
+    <div class="o-cheat">
+      <h2 class="-title">
+        Externe
+      </h2>
+      <pre class="-code">&lt;head&gt;
+  <link rel="stylesheet" href="styles.css">
+&lt;/head&gt;</pre>
+
+      <p class="m-cheat__explication">
+        On insère un lien vers un fichier .css de la même façon qu'on insère une image et un lien. L'avantage c'est bien
+        la centralisation de tous vos styles et la facilité à la modification.
+      </p>
+    </div>
+    <!-- 4 -->
+    <div class="o-cheat">
+      <h2 class="-title" id="css4_title">
+        Les commentaires
+      </h2>
+      <pre>
+<span class="-tag">h1</span> {
+  <span class="-property">color:</span> red;
+  /* C'est rouge, parce que j'aime le rouge */
+}     </pre>
+
+      <p class="m-cheat__explication">
+        On peut insérer des commentaires pour soi ou pour toutes autres personnes qui lira le code. Pour ce faire on
+        utilise un slash et un astérisque /* mon commentaire */.
+        <button class="-hover" id="css4">Exemple</button>
+      </p>
+    </div>
+    <!-- 5 -->
+    <div class="o-cheat">
+      <h2 class="-title">
+        Typographie
+      </h2>
+      <pre>
+<span class="-tag">body</span> {
+  <span class="-property">font-family:</span> Arial, Helvetica, sans-serif;
+}     </pre>
+      <p class="m-cheat__explication">
+        Définit la famille de police d'écriture à utiliser.
+      </p>
+      <pre>
+<span class="-tag">body</span> {
+  <span class="-property">font-size:</span> 18px;
+}     </pre>
+      <p class="m-cheat__explication">
+        Définit la taille (hauteur) d'une police. On peut utiliser plusieurs unités (px, em,...)
+      </p>
+      <pre>
+<span class="-tag">body</span> {
+  <span class="-property">font-weight:</span> bold;
+}     </pre>
+      <p class="m-cheat__explication">
+        Définit l'épaisseur de notre police.
+      </p>
+      <pre>
+<span class="-tag">body</span> {
+  <span class="-property">font-style:</span> italic;
+}     </pre>
+      <p class="m-cheat__explication">
+        Permet de mettre les élements en italique.
+      </p>
+    </div>
+
+    <!-- 6 -->
+    <div class="o-cheat">
+      <h2 class="-title">
+        Typographie 2
+      </h2>
+      <pre>
+<span class="-tag">body</span> {
+  <span class="-property">line-height:</span> 1.5;
+}     </pre>
+      <p class="m-cheat__explication">
+        Permet de gérer l'interlignage.
+      </p>
+      <pre>
+<span class="-tag">p</span> {
+  <span class="-property">color:</span> #22E356;
+}     </pre>
+      <p class="m-cheat__explication">
+        <span id="css6_2_para">Définit la couleur de l'élément. Prends un valeur hexadécimale ou un mot-clé (red,
+          gray,...).</span>
+        <button class="-hover" id="css6_2">Exemple</button>
+      </p>
+      <pre>
+<span class="-tag">p</span> {
+  <span class="-property">text-align:</span> right;
+}     </pre>
+      <p class="m-cheat__explication">
+        <span id="css6_3_para">Permet d'aligner le texte, les valeurs sont: left, right, center, justify (comme sur
+          Word).</span>
+        <button class="-hover" id="css6_3">Exemple</button>
+      </p>
+    </div>
+    <!-- 7 -->
+
+    <!-- 8 -->
+
+    <!-- 9 -->
+
+    <!-- 10 -->
+
+    <!-- 11 -->
+
+    <!-- 12 -->
+
+    <!--<div class="o-cheat">
+      <h2 class="-title">
+        Sections
+      </h2>
+      <div class="-code">
+        &lt;html&gt; <i></i>
+      </div>
+
+      <pre>
+<span class="-tag">html</span> {
+  <span class="-property">color:</span> blue;
+}     </pre>
+
+      <p class="m-cheat__explication">
+        Explication
+        <button class="-hover">Exemple</button>
+      </p>
+    </div>-->
+  </main>
+
+  <footer>
+    <p><a href="../index.html" title="Aller à la page d'accueil">Cheat Sheets</a> by Yana Snyko - Sirius 2020</p>
+  </footer>
+</body>
+<script src="../scriptCSS.js"></script>
+
+</html>
